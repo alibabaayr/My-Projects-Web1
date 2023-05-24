@@ -1,0 +1,95 @@
+/* Add some styles to make the form visually appealing */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+  
+.sign-up-container {
+    max-width: 400px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5), 0 0 20px rgba(255, 0, 0, 0.3);
+}
+  
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+    transition: all 0.7s;
+}
+  
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+  
+button:hover {
+    opacity: 0.8;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="checkbox"]:focus {
+    outline: 3px solid #FF0000;
+    outline-offset: -2px;
+    box-shadow: 0 0 0 5px rgba(255, 0, 0, 0.5);
+    transition: all 0.7s;
+    transform: scaleX(105%);
+}
+
+input[type="checkbox"] {
+    /* Hide the default checkbox */
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"]:checked {
+    /* Style the checked checkbox */
+    border-color: #FF0000;
+    background-color: #FF0000;
+  }
+  
+  input[type="checkbox"]:checked::before {
+    /* Style the checkmark */
+    content: "\2713";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 14px;
+  }
